@@ -1,0 +1,69 @@
+{
+  "name": "neon-cityscape-parallax",
+  "author": "caffeinegamer",
+  "version": "1.0.0",
+  "keywords": [
+    "pebble-app",
+    "watchface",
+    "cyberpunk",
+    "parallax",
+    "accelerometer"
+  ],
+  "private": true,
+  "dependencies": {
+    "@rebble/clay": "^1.1.0"
+  },
+  "pebble": {
+    "displayName": "Neon Cityscape",
+    "uuid": "7c3e9a21-4f8b-4d6e-9a12-b8e45c01d903",
+    "sdkVersion": "3",
+    "enableMultiJS": true,
+    "targetPlatforms": [
+      "emery",
+      "basalt",
+      "diorite",
+      "flint"
+    ],
+    "watchapp": {
+      "watchface": true
+    },
+    "capabilities": [
+      "configurable"
+    ],
+    "messageKeys": [
+      "TimeFormat",
+      "LeadingZero",
+      "ShowDate",
+      "ShowSeconds",
+      "ParallaxEnabled",
+      "ParallaxIntensity",
+      "NeonTheme",
+      "InvertBw"
+    ],
+    "resources": {
+      "media": [
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/menu_icon.png",
+          "menuIcon": true
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_BG_SKY",
+          "file": "images/layers/bg_sky.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_MID_SKYLINE",
+          "file": "images/layers/mid_skyline.png"
+        },
+        {
+          "type": "bitmap",
+          "name": "IMAGE_FG_ROOFTOPS",
+          "file": "images/layers/fg_rooftops.png"
+        }
+      ]
+    }
+  }
+}
